@@ -3,7 +3,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters, CallbackQueryHandler
 
 
-BOT_TOKEN = "7755314548:AAEbn3EhrlLWxxw5swAJhDfo8FQzeBN9lr8"
+BOT_TOKEN = "7898648025:AAEznfaTQFrA8rhhgiESZSLmGoOu3PkodKQ"
 
 
 PAYTM_VERIFY_API = ""
