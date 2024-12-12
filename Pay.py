@@ -14,7 +14,7 @@ DEFAULT_AMOUNT = 5
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
     keyboard = [
-        [InlineKeyboardButton("💳 𝙋𝘼𝙔 ₹5 𝙑𝙄𝘼 𝙋𝘼𝙔𝙏𝙀𝙈🇮🇳", url="https://paytm.com/8688023783@ptyes")]
+        [InlineKeyboardButton("💳 𝙋𝘼𝙔 ₹5 𝙑𝙄𝘼 𝙋𝘼𝙔𝙏𝙀𝙈🇮🇳", url="https://paytm.com/8688@ptyes")]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text(
