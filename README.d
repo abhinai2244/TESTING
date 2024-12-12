@@ -28,8 +28,7 @@ Telegram Bot Token
 
 Clone the repository:
 
-git clone https://github.com/your-repo/paytm-bot.git
-cd paytm-bot
+git clone https://github.com/abhinai2244/TESTING.git
 
 Install the required dependencies:
 
