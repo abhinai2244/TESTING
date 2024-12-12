@@ -3,25 +3,25 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters, CallbackQueryHandler
 
 
-BOT_TOKEN = "7898648025:AAEznfaTQFrA8rhhgiESZSLmGoOu3PkodKQ"
+BOT_TOKEN = "7288004471:AAHeTNJrhYjn0WAR_5becOaLZUZ_2T2ROcY"
 
 
 PAYTM_VERIFY_API = ""
 
-DEFAULT_AMOUNT = 249
+DEFAULT_AMOUNT = 5
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
     keyboard = [
-        [InlineKeyboardButton("💳 𝙋𝘼𝙔 ₹249 𝙑𝙄𝘼 𝙋𝘼𝙔𝙏𝙀𝙈🇮🇳", url="https://paytm.com/8604328478@ptyes")]
+        [InlineKeyboardButton("💳 𝙋𝘼𝙔 ₹5 𝙑𝙄𝘼 𝙋𝘼𝙔𝙏𝙀𝙈🇮🇳", url="https://paytm.com/8688023783@ptyes")]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text(
         f"👋 Hi {user.first_name}!\n\n"
-        "To gain access, you need to pay *₹249* via Paytm.\n\n"
+        "To gain access, you need to pay *₹5* via Paytm.\n\n"
         "✅ Please use the link below to make the payment.\n𝙊𝙐𝙍 𝙎𝙀𝙍𝙑𝙄𝘾𝙀 𝙄𝙎 100 % 𝙏𝙍𝙐𝙎𝙏𝙀𝘿"
-        "🔄 Once done, send me the *Transaction ID* for verification.\n\n𝙈𝘼𝘿𝙀 𝘽𝙔 𝙋𝙍𝘼𝙆𝙃𝘼𝙍 𝙑𝘼𝙍𝘿𝙃𝘼𝙉 ©️"
+        "🔄 Once done, send me the *Transaction ID* for verification.\n\n𝙈𝘼𝘿𝙀 𝘽𝙔 💀 Abhinai 💀 ©️"
         "💡 Click the button below to pay:𝙏𝙝𝙖𝙣𝙠𝙨 𝙛𝙤𝙧 𝙪𝙨𝙞𝙣𝙜 𝙊𝙪𝙧 𝙎𝙚𝙧𝙫𝙞𝙘𝙚 🇮🇳",
         reply_markup=reply_markup,
         parse_mode="Markdown"
@@ -48,7 +48,7 @@ async def handle_transaction(update: Update, context: ContextTypes.DEFAULT_TYPE)
             
         elif status == "success" and amount != DEFAULT_AMOUNT:
             await update.message.reply_text(
-                f"❌ 𝙋𝘼𝙔𝙈𝙀𝙉𝙏 𝘼𝙈𝙊𝙐𝙉𝙏 𝙈𝙄𝙎𝙈𝘼𝙏𝘾𝙃𝙀𝘿\n𝙔𝙊𝙐 𝙋𝘼𝙄𝘿 ₹{amount}, 𝙍𝙀𝙌𝙐𝙄𝙍𝙀𝘿 𝘼𝙈𝙊𝙐𝙉𝙏 *₹{DEFAULT_AMOUNT}*.\n 𝙄𝙁 𝙔𝙊𝙐 𝙒𝘼𝙉𝙏 𝙍𝙀𝙁𝙐𝙉𝘿 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 - @LORDX88"
+                f"❌ 𝙋𝘼𝙔𝙈𝙀𝙉𝙏 𝘼𝙈𝙊𝙐𝙉𝙏 𝙈𝙄𝙎𝙈𝘼𝙏𝘾𝙃𝙀𝘿\n𝙔𝙊𝙐 𝙋𝘼𝙄𝘿 ₹{amount}, 𝙍𝙀𝙌𝙐𝙄𝙍𝙀𝘿 𝘼𝙈𝙊𝙐𝙉𝙏 *₹{DEFAULT_AMOUNT}*.\n 𝙄𝙁 𝙔𝙊𝙐 𝙒𝘼𝙉𝙏 𝙍𝙀𝙁𝙐𝙉𝘿 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 - @clutch008"
                 "Please pay the exact amount to get access.",
                 parse_mode="Markdown"
             )
