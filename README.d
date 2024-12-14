@@ -1,71 +1,37 @@
-#Paytm Transaction Verification Bot
+# Telegram Payment Verification Bot
 
-This is a Telegram bot that verifies Paytm transactions and grants access to users who have completed payments. The bot is built using the python-telegram-bot library and includes features for payment handling and user interaction.
+## Overview
+This is a Telegram bot that facilitates payment verification using Paytm's payment API. Users can initiate payment through the bot, and after making the payment, provide the transaction ID for verification. The bot verifies the payment and grants access to services upon successful validation.
 
-#Features
+---
 
-Start Command: Users can initiate the bot and get instructions for making payments.
+## Features
+- **User-friendly Interaction**:
+  - Welcomes users with a simple `/start` command.
+  - Provides an interactive button for initiating payment via Paytm.
+  
+- **Payment Verification**:
+  - Accepts transaction IDs from users.
+  - Verifies payment using Paytm's verification API.
+  - Checks the payment amount against the default required amount.
+  
+- **Responses**:
+  - Sends appropriate responses for successful or failed transactions.
+  - Handles mismatched payment amounts and provides guidance for resolution.
+  - Displays error messages when transaction verification fails.
 
-Payment Verification: Accepts a Paytm transaction ID and verifies it using a specified API.
+---
 
-Custom Responses: Notifies users of the payment status, including success, amount mismatch, or verification failure.
+## Requirements
+- Python 3.9 or above
+- Telegram Bot Token (replace the placeholder in the code with your bot token)
+- Paytm Payment Verification API Endpoint
 
-Inline Keyboard: Provides a button for users to access the Paytm payment page directly.
+---
 
-Error Handling: Handles invalid inputs and server errors gracefully.
+## Installation and Setup
 
-#Requirements
-
-Python 3.7 or later
-
-python-telegram-bot library
-
-A Paytm payment verification API endpoint
-
-Telegram Bot Token
-
-#Installation
-
-Clone the repository:
-
-git clone https://github.com/abhinai2244/TESTING.git
-
-Install the required dependencies:
-
-pip install python-telegram-bot requests
-
-Set up your Paytm verification API and Telegram bot token:
-
-Replace the placeholders for BOT_TOKEN and PAYTM_VERIFY_API in the script.
-
-#Usage
-
-Run the bot:
-
-python Pay.py
-
-Interact with the bot on Telegram:
-
-Send /start to begin.
-
-Follow the instructions to make a payment and send the transaction ID.
-
-#How It Works
-
-Start Command (/start):
-
-Welcomes the user and provides a payment link and instructions.
-
-Transaction Verification:
-
-Users send their Paytm transaction ID to the bot.
-
-The bot sends the transaction ID and user ID to the specified verification API.
-
-Based on the API response, the bot informs the user if the payment was successful or if there was an error (e.g., amount mismatch).
-
-Error Handling:
-
-If the API cannot be reached or returns an error, the bot notifies the user.
-
-Invalid commands trigger a response with guidance to restart or provide a valid transaction ID.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/telegram-payment-bot.git
+   cd telegram-payment-bot
