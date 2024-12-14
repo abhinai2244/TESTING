@@ -33,5 +33,5 @@ This is a Telegram bot that facilitates payment verification using Paytm's payme
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/telegram-payment-bot.git
+   git clone https://github.com/abhinai2244/telegram-payment-bot.git
    cd telegram-payment-bot
